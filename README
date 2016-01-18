@@ -1,1 +1,12 @@
-Test
+To make, simply type
+ >> ./makefile
+To run exp, type
+ >> ./exp.sh
+Can modify "num" in exp.sh to change the sim times,
+will auto gen. four directory contains accu.txt and a log dir in which you can see detailed messages.
+
+
+1. Modify "exp.sh:line21 algo" to the name you want like original,nmr.three etc
+2. Modify "exp_type_1" and "exp_type_2" to "Random" or other strings to switch GG and robust
+3. Modify "GG_robust..." in "CERES.h" to switch 1,3,5 nmr and GG_V1 GG_V2
+4. Also modify those "robust_computing_modify" to "robust_computing" after "exp_type_1" to switch to original version
