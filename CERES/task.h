@@ -247,22 +247,42 @@ void Task::setCVATable_only_CVA(const Core_Manager* core_manager){
 
 		// cout<<"target_reliab: "<<target_reliab<<endl;
 		// cout<<"reliab: "<<reliab<<endl;
-		
-		if (reliab > target_reliab){
-			N = 1;
-		}
-		else if(reliab >= 0.84){
-			N = 3 ;			
-		}
-		else if(reliab >= 0.73){
-			N = 4 ;
-		}
-		else if(reliab >= 0.64){
-			N = 5 ;
-		}
-		else{
-			N = 999;
-		}
+	    if(target_reliab == 0.95){	
+		    if (reliab > target_reliab){
+			    N = 1;
+		    }
+    		else if(reliab >= 0.84){
+	    		N = 3 ;			
+		    }
+    		else if(reliab >= 0.73){
+	    		N = 4 ;
+		    }
+    		else if(reliab >= 0.64){
+	    		N = 5 ;
+		    }
+    		else{
+	    		N = 999;
+		    }
+        }
+       else if(target_reliab == 0.9){	
+		    if (reliab > target_reliab){
+			    N = 1;
+		    }
+    		else if(reliab >= 0.77){
+	    		N = 3 ;			
+		    }
+    		else if(reliab >= 0.65){
+	    		N = 4 ;
+		    }
+    		else if(reliab >= 0.57){
+	    		N = 5 ;
+		    }
+    		else{
+	    		N = 999;
+		    }
+        }
+        else
+            cerr << "target_reliab " << endl ;
 
 
 		this->CVA_table.push_back(N);

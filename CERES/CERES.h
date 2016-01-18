@@ -320,11 +320,11 @@ void Ceres::GG_random_robustCombuting(vector<Task*> task_to_handle){
 		////NMR_3
 		//this->GG_3_NMR();
 		////NMR_5
-		//this->GG_5_NMR();
-		this->GG_test_NMR() ;
+		this->GG_5_NMR();
+		//this->GG_test_NMR() ;
         this->parallelComputing();
-		this->Voting();
-
+		//this->Voting();
+        this->NMRVoting();
     printf("\n==================================================================================\n");
 }
 

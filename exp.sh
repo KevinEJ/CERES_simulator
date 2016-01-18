@@ -15,7 +15,7 @@ e=`printf "%01g" $ee`
 f=`printf "%01g" $ff`
 
 #Parameters to set to run exp.
-num=1000
+num=1
 algo=rd_num
 ceres_env=$f
 ceres_env_num=$ff
@@ -31,7 +31,7 @@ envir_setting8=./CERES/environment8
 
 for env in $envir_setting3 $envir_setting4 $envir_setting5 $envir_setting6 $envir_setting7 $envir_setting8 
 do
-    for rand_num in 4 6 8 10 12
+    for rand_num in 4 5 6 7 8
     do
         #for algo_type in CTVA GG_1 GG_2 GG_3 GG_4
         for algo_type in CTVA GG_4 NMR_5

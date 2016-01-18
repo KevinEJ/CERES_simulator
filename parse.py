@@ -1,14 +1,14 @@
 import os
 import pdb
 
-Random_tasks = ['1','2','3','4','5','6','7','8','9','10','11','12']
+Random_tasks = ['4','5','6','7','8']
 Env          = ["env3" , "env4" , "env5" , "env6" , "env7" , "env8" ]
 algo         = ["CTVA" , "NMR_5" , "GG_4"]
 Result = []
 for i in range(len(Random_tasks)):
     for t in range(len(algo)):
         for y in range(len(Env)):
-            Result.append("rd_task." + Env[y] + ".95.100." + algo[t] + "." + Random_tasks[i])
+            Result.append("rd_num." + Env[y] + ".95.100." + algo[t] + "." + Random_tasks[i])
 
 #random_env1.95.50.CTVA.4
 
